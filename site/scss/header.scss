@@ -1,0 +1,31 @@
+@import "vars";
+
+main > header {
+    padding-top: $large-margin;
+    padding-bottom: $margin;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: table;
+
+    // logo
+    img {
+        height: 75px;
+        display: table-cell;
+    }
+
+    nav {
+        text-align: right;
+        display: table-cell;
+
+        a {
+            text-transform: uppercase;
+            font-size: 12px;
+            color: black;
+            margin-left: $margin;
+
+            &.get-one {
+                color: $base-colour;
+            }
+        }
+    }
+}
